@@ -3,7 +3,6 @@ import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
 import Form from 'react-bootstrap/Form'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
 import njackLogo from './images/njacklogo.png'
 
@@ -27,8 +26,8 @@ function TopNav() {
                         
                     </Nav>
                     <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2 searchBar" />
+                        <Button variant="outline-dark">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>

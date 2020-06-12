@@ -12,8 +12,39 @@ code {
     monospace;
 }
 
+nav.navbar{
+  padding-left: 4px;
+}
+
 a.nav-link{
   font-size: larger;
   font-weight: 600;
+}
+h3{
+  color:black;
+  font-family: 'Times New Roman';
+}
+
+div.leftSideBar{
+  padding-left: 14px;
+  flex: 0 0 0;
+  /* flex-direction: column; */
   
 }
+
+h5.flip{
+  color:black;
+  font-family: Cairo, Arial;
+  transform: rotate(-90.00deg);
+  opacity: 0.25999999046325684;
+  font-weight: 700;
+  line-height: 0.2;
+  
+}
+pre.space{
+  margin-bottom: 0px;
+}
+input.mr-sm-2.searchBar {
+  width: 150px;
+}
+
