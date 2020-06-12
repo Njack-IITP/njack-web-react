@@ -48,3 +48,13 @@ input.mr-sm-2.searchBar {
   width: 150px;
 }
 
+div.rectangle{
+  background-color: black;
+  padding: 15px;
+
+}
+
+div.rectangle h2{
+  color: aliceblue;
+  margin-bottom: 20px;
+}

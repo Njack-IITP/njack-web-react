@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TopNav from './TopNav'
 import { SocialMediaIconsReact } from 'social-media-icons-react';
+import recImage from './images/recImage.png'
 
 export default class Home extends Component {
     render() {
@@ -10,7 +11,6 @@ export default class Home extends Component {
                 <div className="container-fluid" >
                     <div className="row">
                         <div className="col-1 leftSideBar ">
-                            <br />
                             <br />
                             <br />
                             <br />
@@ -54,9 +54,22 @@ export default class Home extends Component {
                             <SocialMediaIconsReact borderColor="rgba(6,7,7,0.99)" borderWidth="1" borderStyle="solid" icon="facebook" iconColor="rgba(15,7,7,1)" backgroundColor="rgba(255,255,255,1)" iconSize="8" roundness="50%" url="https://www.facebook.com/njack.iitp/" size="24" />
                         </div>
 
-                        <div class="col">
-                            
-                    </div>
+                        <div />
+                        <div className="col"></div>
+
+                        <div className="col-sm-auto rectangle">
+                            <h2>Not Just Another Coding Club</h2>
+                            <div className="row align-items-center">
+                                <div className="col-sm-auto">ajdfgajgfajdhafdaf</div>
+                                <div className="col-sm-auto">
+                                    <img src={recImage} alt="img"></img>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="col"></div>
+
                     </div>
                 </div>
             </div>
