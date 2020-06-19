@@ -12,3 +12,43 @@ code {
     monospace;
 }
 
+div.aboutrow{
+  margin-bottom: 30px;
+}
+
+div.about{
+  text-align: center;
+  
+}
+
+img.aboutus{
+  /* min-width: ; */
+  width: 100%;
+}
+
+div.whatwedo{
+  padding: 15px 15px;
+  /* padding-left: 40px; */
+}
+div.whatwedo p{
+  font-size: 26.00px;
+  font-weight: 700;
+  color:rgba(112, 112, 112, 1);
+}
+
+@media screen and (max-width:630px){
+  div.whatwedo p{
+      font-size: 17.00px;
+      font-weight: 700;
+      color:rgba(112, 112, 112, 1);
+  }
+
+  div.whatwedo h2{
+      font-size: 26.00px;
+      font-weight: 700;
+      color:rgba(112, 112, 112, 1);
+  }
+  div.aboutrow{
+      margin-bottom: 0px;
+  }
+}
