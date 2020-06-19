@@ -11,3 +11,218 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.main-container{
+  overflow: hidden;
+  display: grid;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.sidebaricon{
+  position: fixed;
+  z-index: 2;
+  padding: 5px;
+  right: 2px;
+  top: 40%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+div.aboutrow{
+  margin-bottom: 30px;
+}
+
+div.about{
+  text-align: center;
+  
+}
+
+img.aboutus{
+  /* min-width: ; */
+  width: 100%;
+}
+
+div.whatwedo{
+  padding: 15px 15px;
+  /* padding-left: 40px; */
+}
+div.whatwedo p{
+  font-size: 26.00px;
+  font-weight: 700;
+  color:rgba(112, 112, 112, 1);
+}
+
+@media screen and (max-width:630px){
+  div.whatwedo p{
+      font-size: 17.00px;
+      font-weight: 700;
+      color:rgba(112, 112, 112, 1);
+  }
+
+  div.whatwedo h2{
+      font-size: 26.00px;
+      font-weight: 700;
+      color:rgba(112, 112, 112, 1);
+  }
+  div.aboutrow{
+      margin-bottom: 0px;
+  }
+}
+
+/* nwoc apeireon row */
+div.nwocAper{
+  /* background-color: black; */
+  margin-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+}
+
+div.nwocrow{
+  padding-top: 35px;
+}
+
+div.nwocrow img{
+  margin-bottom: 60px;
+}
+
+div.nwocrow h1{
+  color: rgb(49, 43, 43);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+div.nwocrow p{
+  text-align: center;
+  color: rgba(112, 112, 112, 1);
+  font-weight: 700;
+  font-size: 26.00px;
+  padding:20px;
+}
+
+div.nwocrow button{
+  margin: 20px;
+  font-size: 20.00px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: #F07630;
+  border: 1px solid white;
+}
+div.nwocrow button:hover{
+  border: 1px solid white;
+  background-color: black;
+}
+
+.nwoc-img{
+  border: 2px solid black;
+}
+.apeireon-img {
+   border: 2px solid black;
+}
+
+.nwoc-aper-line{
+  width: 70%;
+  border: 1px solid rgb(139, 92, 4);
+}
+
+@media screen and (max-width:800px){
+  div.nwocrow{
+      padding-top: 0;
+  }
+  div.nwocrow p{
+      font-size: 19.00px;
+  }
+  h1.nwochead {
+      font-size: 35px;
+  }
+
+  .nwoc-img{
+   border: 2px solid black;
+   border-top: 3px solid black;
+      background-color: white;
+  }
+}
+
+
+/* GSOC */
+div.gsochead{
+  font-size: 43.00px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Segoe UI', Arial;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+p.gsoc-para{
+  color: rgba(112, 112, 112, 1);
+}
+
+div.mobile-gsoc{
+  margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 720px){
+  div.gsochead{
+      font-size: 34px;
+  }
+  div.gsoc-text{
+      margin-bottom: 30px;
+  }
+  div.gsoc-text p{
+      padding: 27px;
+      font-size: 19px;
+      font-weight: 700;
+      text-align: center;
+  }
+}
+
+button.gsoc-results{
+  margin: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+
+
+
+/* collaborations */
+div.collab{
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+div.collab-head{
+  padding: 45px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 43px;
+  color:white;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px){
+div.collab-head{
+    margin-bottom: 0px;
+    font-size: 33px;
+}  
+}
+
+/* footer */
+
+div.foot-row{
+  margin-top:30px;
+}
+
+.list-group-item-action{
+  color: rgba(0,0,0,0.4499999880);
+  font-weight: 500;
+}
+
+.list-group-item-action:hover{
+  color:rgba(0, 0, 0, 0.747);
+}
