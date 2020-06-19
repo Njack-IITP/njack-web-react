@@ -21,7 +21,7 @@ export default class Gsoc extends Component {
                         <img className="img-fluid" src={require('../assets/gsoc.png')} />
                     </div>
                     <div className="row-fluid gsoc-text">
-                        <p className="gsoc-para">Google Summer of Code is the most prestigious
+                        <p className="gsoc-para1">Google Summer of Code is the most prestigious
                         global program focused on bringing
                     student developers into open source software development.<br /><br />
                     Congrats to all the six students of our institute who have been selected in the year 2020!</p>
