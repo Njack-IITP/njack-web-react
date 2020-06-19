@@ -3,6 +3,7 @@ import About from './About'
 import Events from './Events'
 import Collab from './Collab'
 import Footer from './Footer'
+import Gsoc from './Gsoc'
 export default class Home extends Component {
     render() {
         return (
@@ -15,6 +16,7 @@ export default class Home extends Component {
                 </div>
                 <About />
                 <Events />
+                <Gsoc />
                 <Collab />
                 <Footer />
             </div>

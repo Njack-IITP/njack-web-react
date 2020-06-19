@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <div class="container-fluid">
             <div class="row foot-row">
-                <div class="col">
+                <div class="col-md-4 col-4">
                     <div class="list-group list-group-flush">
                         <button type="button" class="list-group-item list-group-item-action" disabled>
                             <h4>Upcoming Events</h4>
@@ -19,7 +19,7 @@ export default class Footer extends Component {
                     </div>
                 </div>
 
-                <div class="col-md col-12">
+                <div class="col-md-4 col-8">
                     <div class="list-group list-group-flush">
                         <button type="button" class="list-group-item list-group-item-action" disabled>
                             <h4>Contact Us</h4>

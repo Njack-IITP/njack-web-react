@@ -143,6 +143,52 @@ div.nwocrow button:hover{
   }
 }
 
+
+/* GSOC */
+div.gsochead{
+  font-size: 43.00px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Segoe UI', Arial;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+p.gsoc-para{
+  color: rgba(112, 112, 112, 1);
+}
+
+div.mobile-gsoc{
+  margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 720px){
+  div.gsochead{
+      font-size: 34px;
+  }
+  div.gsoc-text{
+      margin-bottom: 30px;
+  }
+  div.gsoc-text p{
+      padding: 27px;
+      font-size: 19px;
+      font-weight: 700;
+      text-align: center;
+  }
+}
+
+button.gsoc-results{
+  margin: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+
+
+
 /* collaborations */
 div.collab{
   background-color: black;
