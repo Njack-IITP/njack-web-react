@@ -151,7 +151,7 @@ div.gsochead{
   font-style: normal;
   font-family: 'Segoe UI', Arial;
   margin-top: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
   text-align: center;
 }
 p.gsoc-para{
@@ -165,6 +165,7 @@ div.mobile-gsoc{
 @media only screen and (max-width: 720px){
   div.gsochead{
       font-size: 34px;
+      margin-bottom: 58px;
   }
   div.gsoc-text{
       margin-bottom: 30px;
@@ -184,6 +185,38 @@ button.gsoc-results{
   border-radius: 15px;
   margin-top: 30px;
   font-weight: 600;
+}
+
+div.gsoc{
+  margin-bottom: 80px;
+}
+
+div.magic{
+  background-color: rgb(73, 73, 231);
+  box-shadow:  8px 8px 8px 0px rgba(0,0,0,1);
+  margin: 10px;
+  filter: brightness(68%);
+  transition: transform 1s, visibility 1s  ease ;
+  
+}
+div.magic:hover{
+  transform: scale(1.2);
+  z-index: 2;
+  filter: brightness(100%);
+}
+img.magic-img{
+  position: absolute; 
+  top: -66px; 
+  left: 21%; 
+  width: 58%;
+}
+p.gsoc-para{
+  text-align: center;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(248, 248, 248);
+  padding-top: 50%;
 }
 
 
