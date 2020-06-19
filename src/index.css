@@ -132,3 +132,26 @@ div.nwocrow button:hover{
       background-color: white;
   }
 }
+
+/* collaborations */
+div.collab{
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+div.collab-head{
+  padding: 45px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 43px;
+  color:white;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px){
+div.collab-head{
+    margin-bottom: 0px;
+    font-size: 33px;
+}  
+}

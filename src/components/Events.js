@@ -48,9 +48,6 @@ export default class Events extends Component {
                     </div>
                 </div>
 
-                <hr className="nwoc-aper-line" />
-                <br /><br />
-
             </div>
         )
     }
