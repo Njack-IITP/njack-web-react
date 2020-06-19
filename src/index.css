@@ -19,6 +19,16 @@ div.main-container{
   padding: 8px;
 }
 
+.sidebaricon{
+  position: fixed;
+  z-index: 2;
+  padding: 5px;
+  right: 2px;
+  top: 40%;
+  background-color: white;
+  border-radius: 15px;
+}
+
 div.aboutrow{
   margin-bottom: 30px;
 }
@@ -154,4 +164,19 @@ div.collab-head{
     margin-bottom: 0px;
     font-size: 33px;
 }  
+}
+
+/* footer */
+
+div.foot-row{
+  margin-top:30px;
+}
+
+.list-group-item-action{
+  color: rgba(0,0,0,0.4499999880);
+  font-weight: 500;
+}
+
+.list-group-item-action:hover{
+  color:rgba(0, 0, 0, 0.747);
 }
