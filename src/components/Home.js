@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Homepage from './Homepage'
 import About from './About'
 import Events from './Events'
 import Collab from './Collab'
@@ -14,6 +15,7 @@ export default class Home extends Component {
                     <img src={require('../assets/Twitter – 1.png')} /><br /><br />
                     <img src={require('../assets/Github – 1.png')} />
                 </div>
+                <Homepage />
                 <About />
                 <Events />
                 <Gsoc />
