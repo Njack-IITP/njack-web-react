@@ -11,7 +11,7 @@ export default class Homepage extends Component {
                     <div class="col-md-5 njack-block">
                         <img class="njack-logo" src={require('../assets/Njack_logo.png')} alt="njack-logo" />
                         <br /><br />
-                        <h2 class="not-just-text">Not Just Another Coding Club</h2>
+                        <h2 class="not-just-text">Not Just Another <br/>Computer Science Club</h2>
                         <br />
                         <p class="home-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -41,7 +41,7 @@ export default class Homepage extends Component {
                     </div>
 
                 </div>
-                <br /><br /><br />
+                <br />
                 <hr class="nwoc-aper-line" />
                 <br /><br />
             </div>

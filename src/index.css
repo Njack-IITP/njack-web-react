@@ -12,11 +12,140 @@ code {
     monospace;
 }
 
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #df9c76;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: black;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* navbar */
+nav{
+  display: flex !important;
+  position: fixed;
+  width: 100%; 
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  z-index: 2;
+}
+
+.logo{
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 36%;
+  margin-bottom: 8px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none !important;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover{
+  color: white;
+}
+
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin: 5px;
+  transition: all 0.7s ease;
+
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:768px){
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: teal;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       z-index: 1;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   .nav-links li{
+       opacity:0;
+   }
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
+
 div.main-container{
   overflow: hidden;
   display: grid;
   border: 2px solid black;
   padding: 8px;
+  padding-top:55px;
 }
 
 .sidebaricon{
@@ -42,7 +171,7 @@ div.main-container{
   height: 100%;
   width: 100%;
   background-color: #EEC4A5;
-  clip-path: ellipse(48% 41% at 93% 35%);
+  clip-path: ellipse(47% 41% at 93% 35%);
 }
 
 @media screen and (max-width: 489px){
@@ -106,7 +235,7 @@ button.home-but{
       margin-bottom: 50px;
   }
   .njack-logo{
-      /* display: block; */
+      display: block;
       margin: auto;
   }
 }
