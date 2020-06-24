@@ -12,11 +12,144 @@ code {
     monospace;
 }
 
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #df9c76;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: black;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* navbar */
+nav{
+  display: flex !important;
+  position: fixed;
+  width: 100%; 
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  z-index: 2;
+}
+
+.logo{
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 36%;
+  margin-bottom: 8px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none !important;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover{
+  color: white;
+}
+
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin: 5px;
+  transition: all 0.7s ease;
+
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:768px){
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: teal;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       z-index: 1;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   .nav-links li{
+       opacity:0;
+   }
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.nav-links-animation{
+  animation: navLinkFade 1s ease-out forwards ;
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
+
 div.main-container{
   overflow: hidden;
   display: grid;
   border: 2px solid black;
   padding: 8px;
+  padding-top:55px;
 }
 
 .sidebaricon{
@@ -28,6 +161,142 @@ div.main-container{
   background-color: white;
   border-radius: 15px;
 }
+
+/* Home */
+.main-homepage-container{
+  overflow: hidden;
+}
+
+.bg{
+  overflow: hidden;
+  position: absolute;
+  right:4px;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-color: #EEC4A5;
+  clip-path: ellipse(47% 41% at 93% 35%);
+}
+
+@media screen and (max-width: 489px){
+  .bg{
+      display: none;
+  }
+}
+
+.njack-block{
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.njack-logo{
+  padding-top: 40px;
+}
+
+.not-just-text{
+  font-size: 31px;
+  font-weight: bold;
+  text-align: left;
+  font-family: Segoe UI;
+  color: teal;
+}
+
+p.home-para{
+  font-size: 25px;
+  font-family: Segoe UI;
+  font-weight: bold;
+  color: rgba(112, 112, 112, 1);
+}
+
+@media screen and (max-width: 630px){
+  p.home-para{
+      font-size: 19px;
+      text-align: center;
+  }
+  .not-just-text{
+      font-size: 25px;
+      text-align: center;
+  }
+ 
+}
+button.home-but{
+  background-color: #F07630;
+  border-radius: 19px;
+  border: 4px solid teal;
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  font-family: Segoe UI;
+  font-weight: bold;
+  padding: 12px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 630px){
+  button.home-but{
+      margin: auto;
+      display: block;
+      font-size: 17px;
+      padding: 9px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+  }
+  .njack-logo{
+      display: block;
+      margin: auto;
+  }
+}
+
+button.home-but:hover{
+  filter: brightness(90%);
+  color: white;
+  background-color: teal;
+}
+
+div.angbrack-row{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 80px;
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); */
+}
+
+p.angbrack-para{
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+
+div.home-clip{
+  justify-items: center;
+  justify-content: center;
+  width: 500px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: teal;
+  border-radius: 15px;
+  cursor: pointer;
+  clip-path: circle(13% at 50% 25%);
+  transition: clip-path 0.6s ease-in-out;
+}
+
+@media only screen and (max-width:1150px){
+     div.home-clip{
+         display: none;
+     }
+}
+
+
+div.home-clip:hover{
+  clip-path: circle(75%);
+}
+
+
+/* About-page */
 
 div.aboutrow{
   margin-bottom: 30px;
