@@ -129,6 +129,10 @@ nav{
   }
 }
 
+.nav-links-animation{
+  animation: navLinkFade 1s ease-out forwards ;
+}
+
 .toggle .line1{
 transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -184,6 +188,10 @@ div.main-container{
   text-align: left;
   padding-left: 40px;
   padding-right: 50px;
+}
+
+.njack-logo{
+  padding-top: 40px;
 }
 
 .not-just-text{
