@@ -280,11 +280,11 @@ div.home-clip{
   background-color: teal;
   border-radius: 15px;
   cursor: pointer;
-  clip-path: circle(13% at 50% 25%);
+  clip-path: circle(35px at 50% 40px);
   transition: clip-path 0.6s ease-in-out;
 }
 
-@media only screen and (max-width:1150px){
+@media only screen and (max-width:1000px){
      div.home-clip{
          display: none;
      }
@@ -465,11 +465,11 @@ div.magic{
   box-shadow:  8px 8px 8px 0px rgba(0,0,0,1);
   margin: 10px;
   filter: brightness(68%);
-  transition: transform 1s, visibility 1s  ease ;
+  transition: transform 0.8s, visibility 1s  ease ;
   
 }
 div.magic:hover{
-  transform: scale(1.2);
+  transform: scale(1.08);
   z-index: 2;
   filter: brightness(100%);
 }
