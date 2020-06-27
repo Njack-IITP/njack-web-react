@@ -178,7 +178,7 @@ div.main-container{
   clip-path: ellipse(47% 41% at 93% 35%);
 }
 
-@media screen and (max-width: 489px){
+@media screen and (max-width: 640px){
   .bg{
       display: none;
   }

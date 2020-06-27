@@ -4,7 +4,7 @@ export default class Homepage extends Component {
     render() {
         return (
             // <!-- Home -->
-            <div class="container-fluid main-homepage-container">
+            <div class="container-fluid main-homepage-container" id="home-page">
                 <div class="bg container-fluid"></div>
                 <div class="row">
                     <div class="col"></div>
