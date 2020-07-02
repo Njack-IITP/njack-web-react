@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Events extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="events-page">
 
                 <br /><br /><br />
                 <hr className="nwoc-aper-line" />

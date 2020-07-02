@@ -22,10 +22,10 @@ export default class Topnav extends Component {
                     <h4>NJACK</h4>
                 </div>
                 <ul className={ `nav-links ${isVisible ? "nav-active" : "" }` }>
-                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#">Home</a></li>
-                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#">About</a></li>
-                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#">Events</a></li>
-                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#">Projects</a></li>
+                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#home-page">Home</a></li>
+                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#about-page">About</a></li>
+                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#events-page">Events</a></li>
+                    <li className={isVisible ? "nav-links-animation" : ""}><a href="#team-page">Team</a></li>
                 </ul>
 
                 <div className={ `burger ${isVisible ? "toggle" : "" }` } onClick={this.handleClick}>    

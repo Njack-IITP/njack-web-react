@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image'
 export default class About extends Component {
     render() {
         return (
-            <Container fluid>
+            <Container fluid id="about-page">
                 <Row className="row aboutrow">
                     <Col></Col>
                     <Col md={4} sm={5} xs={7} className="about">
