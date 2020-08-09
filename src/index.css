@@ -521,13 +521,12 @@ div.collab-head{
 
 div.foot-row{
   margin-top:30px;
+  justify-content: center;
 }
 
-.list-group-item-action{
+.footer-list{
+  list-style: none;
+  text-align: left;
   color: rgba(0,0,0,0.4499999880);
   font-weight: 500;
-}
-
-.list-group-item-action:hover{
-  color:rgba(0, 0, 0, 0.747);
 }
