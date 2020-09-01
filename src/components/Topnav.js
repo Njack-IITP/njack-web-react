@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
+import IconButton from '@material-ui/core/IconButton';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 export default class Topnav extends Component {
-
     state = {
         isVisible: false
     };
@@ -14,7 +14,7 @@ export default class Topnav extends Component {
         }));
         console.log(this.state);
     };
-    
+
     render() {
         const isVisible = this.state.isVisible;
         return (
@@ -29,7 +29,9 @@ export default class Topnav extends Component {
                     <li className={isVisible ? "nav-links-animation" : ""}><Link to="/team">Team</Link></li>
                     <li className={isVisible ? "nav-links-animation" : ""}><a href="https://www.iitp.ac.in/">IIT Patna</a></li>
                 </ul>
-
+                <IconButton aria-label="dark-mode">
+                    <Brightness4Icon onClick={this.props.onDarkModeToggle}/>
+                </IconButton>
                 <div className={`burger ${isVisible ? "toggle" : ""}`} onClick={this.handleClick}>
                     <div className="line1"></div>
                     <div className="line2"></div>
