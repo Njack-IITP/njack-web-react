@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 export default class Events extends Component {
   render() {
     return (
-      <div className="container-fluid" id="events-page">
+      <div className="container-fluid" id="events" >
 
         <br /><br /><br />
         <hr className="nwoc-aper-line" />
 
-        <div className="row-fluid nwocAper">
+        <div className="row-fluid nwocAper" ref={this.props.eventsref}>
           <div className="row nwocrow">
             <div className="col"></div>
             <div className="col-sm-5 d-flex align-items-center">

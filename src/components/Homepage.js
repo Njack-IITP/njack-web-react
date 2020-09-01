@@ -4,9 +4,9 @@ export default class Homepage extends Component {
   render() {
     return (
       // <!-- Home -->
-      <div className="container-fluid main-homepage-container" id="home">
-        <div className="bg container-fluid"></div>
-        <div className="row">
+      <div className="container-fluid main-homepage-container" >
+        <div className="bg container-fluid" ></div>
+        <div className="row" >
           <div className="col"></div>
           <div className="col-md-5 njack-block">
             <img className="njack-logo" src={require('../assets/Njack_logo.png')} alt="njack-logo" />
