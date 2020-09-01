@@ -1,50 +1,54 @@
 import React, { Component } from 'react'
 
 export default class Homepage extends Component {
-    render() {
-        return (
-            // <!-- Home -->
-            <div class="container-fluid main-homepage-container" id="home-page">
-                <div class="bg container-fluid"></div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-md-5 njack-block">
-                        <img class="njack-logo" src={require('../assets/Njack_logo.png')} alt="njack-logo" />
-                        <br /><br />
-                        <h2 class="not-just-text">Not Just Another <br/>Computer Science Club</h2>
-                        <br />
-                        <p class="home-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Dignissim suspendisse.
-                         </p>
-                        <button class="btn btn-lg home-but">Learn More</button>
-                    </div>
+  render() {
+    return (
+      // <!-- Home -->
+      <div className="container-fluid main-homepage-container" id="home">
+        <div className="bg container-fluid"></div>
+        <div className="row">
+          <div className="col"></div>
+          <div className="col-md-5 njack-block">
+            <img className="njack-logo" src={require('../assets/Njack_logo.png')} alt="njack-logo" />
+            <br /><br />
+            <h2 className="not-just-text">Not Just Another <br />Computer Science Club</h2>
+            <br />
+            <p className="home-para">
+              The Computer Science Club of IIT Patna!
+            </p>
+            <button className="btn home-but">
+              <a href="#about-page" className="normal-link">
+                <i class="fa fa-chevron-circle-down m-2" aria-hidden="true"></i>
+                Learn More
+              </a>
+            </button>
+          </div>
 
-                    <div class="col-md-5 m-auto">
-                        <img class="img-fluid" src={require('../assets/Main photo.png')} />
-                    </div>
-                    <div class="col"></div>
-                </div>
+          <div className="col-md-5 m-auto">
+            <img className="img-fluid" src={require('../assets/Main photo.png')} />
+          </div>
+          <div className="col"></div>
+        </div>
 
-                <div class="row angbrack-row">
-                    <div class="col home-clip">
-                        <img class="home-clip-img" src={require('../assets/angbrack.svg')} />
-                        <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                    </div>
-                    <div class="col home-clip">
-                        <img src={require('../assets/angbrack.svg')} />
-                        <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                    </div>
-                    <div class="col home-clip">
-                        <img src={require('../assets/angbrack.svg')} />
-                        <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                    </div>
+        <div className="row angbrack-row">
+          <div className="col home-clip">
+            <img className="home-clip-img" src={require('../assets/angbrack.svg')} />
+            <p className="angbrack-para">We develop amazing web and mobile apps!</p>
+          </div>
+          <div className="col home-clip">
+            <img src={require('../assets/angbrack.svg')} />
+            <p className="angbrack-para">We innovate in the fields of AI & Machine Learning!</p>
+          </div>
+          <div className="col home-clip">
+            <img src={require('../assets/angbrack.svg')} />
+            <p className="angbrack-para">We compete zealously in Programming Contests and Hackathons!</p>
+          </div>
 
-                </div>
-                <br />
-                <hr class="nwoc-aper-line" />
-                <br /><br />
-            </div>
-        )
-    }
+        </div>
+        <br />
+        <hr className="nwoc-aper-line" />
+        <br /><br />
+      </div>
+    )
+  }
 }
