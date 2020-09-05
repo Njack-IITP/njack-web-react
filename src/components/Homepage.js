@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class Homepage extends Component {
   render() {
+    const {darkMode} = this.props;
     return (
       // <!-- Home -->
       <div className="container-fluid main-homepage-container" >
@@ -9,11 +10,11 @@ export default class Homepage extends Component {
         <div className="row" >
           <div className="col"></div>
           <div className="col-md-5 njack-block">
-            <img className="njack-logo" src={require('../assets/Njack_logo.png')} alt="njack-logo" />
+            <img className="njack-logo" src={require('../assets/njack-logo.svg')} alt="njack-logo" />
             <br /><br />
-            <h2 className="not-just-text">Not Just Another <br />Computer Science Club</h2>
+            <h2 className={darkMode?"not-just-text dark-text-heading":"not-just-text"}>Not Just Another <br />ComputerScience Klub</h2>
             <br />
-            <p className="home-para">
+            <p className={darkMode?"home-para dark-text-para":"home-para"}>
               The Computer Science Club of IIT Patna!
             </p>
             <button className="btn home-but">

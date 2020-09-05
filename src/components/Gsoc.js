@@ -3,14 +3,15 @@ import Profile from './common/profile'
 
 export default class Gsoc extends Component {
 	render() {
+		const {darkMode} = this.props;
 		return (
 			<div>
 				<hr className="nwoc-aper-line" />
 				<br /><br />
 
 				<div className="row-fluid">
-					<div className="col gsochead">
-						GSOC Results @2020
+					<div className="col">
+						<h1 className={darkMode?"gsochead dark-text-heading":"gsochead"}>Achievers@GSoC-2020</h1>
                      </div>
 				</div>
 
@@ -20,7 +21,7 @@ export default class Gsoc extends Component {
 						<img className="img-fluid" src={require('../assets/gsoc.png')} />
 					</div>
 					<div className="row-fluid gsoc-text">
-						<p className="gsoc-para">
+						<p className={darkMode?"gsoc-para dark-text-para":"gsoc-para"}>
 							Google Summer of Code is the most prestigious
                             global program focused on bringing student developers into open source software development.<br /><br />
                             Congrats to all the six students of our institute who have been selected in the year 2020!

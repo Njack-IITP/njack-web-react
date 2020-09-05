@@ -9,15 +9,16 @@ import Sidebar from './Sidebar'
 
 export default class Home extends Component {
   render() {
+    const {darkMode} = this.props;
     return (
       <div className="container-fluid main-container" id="home">
         <Sidebar/>
-        <Homepage />
-        <About />
-        <Events />
-        <Gsoc />
+        <Homepage darkMode={darkMode}/>
+        <About darkMode={darkMode}/>
+        <Events darkMode={darkMode}/>
+        <Gsoc darkMode={darkMode}/>
         <Collab />
-        <Footer />
+        <Footer darkMode={darkMode}/>
       </div>
 
     )

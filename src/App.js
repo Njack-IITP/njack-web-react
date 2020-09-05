@@ -12,8 +12,8 @@ function App() {
     <div className={darkMode?"App dark":"App"}>
       <Topnav onDarkModeToggle={handleDarkModeChange}/>
       <Switch>
-       <Route path="/team" component={Team} />
-       <Route path="/" component={Home} />
+       <Route path="/team" render={()=><Team darkMode={darkMode}/>} />
+       <Route path="/" render={()=><Home darkMode={darkMode}/>} />
       </Switch>
     </div>
   );
