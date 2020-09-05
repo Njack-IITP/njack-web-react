@@ -9,9 +9,9 @@ export default function Profile(props) {
                 {name}<br/>
                 {position}<br/>
                 {position!=="Overall Co-ordinator" && field}<br/>
-                {lin && <a href={lin}><i className="fa fa-linkedin-square fa-lg m-2" style={{color:"white"}}/></a>}
-                {git && <a href={git}><i className="fa fa-github-square fa-lg m-2" style={{color:"white"}}/></a>}
-                {fb && <a href={fb}><i className="fa fa-facebook-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {lin && <a href={lin} target="_blank"><i className="fa fa-linkedin-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {git && <a href={git} target="_blank"><i className="fa fa-github-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {fb && <a href={fb} target="_blank"><i className="fa fa-facebook-square fa-lg m-2" style={{color:"white"}}/></a>}
             </p>
         </div>
     )
