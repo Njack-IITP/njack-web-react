@@ -409,7 +409,7 @@ div.nwocrow button:hover{
 
 
 /* GSOC */
-div.gsochead{
+div h1.gsochead{
   font-size: 43.00px;
   font-weight: 700;
   font-style: normal;
@@ -427,7 +427,7 @@ div.mobile-gsoc{
 }
 
 @media only screen and (max-width: 720px){
-  div.gsochead{
+  div h1.gsochead{
       font-size: 34px;
       margin-bottom: 58px;
   }
@@ -535,4 +535,21 @@ div.team-row{
 button a.normal-link{
    color: white;
    text-decoration: none;
+}
+
+/* dark mode  */
+div h1.dark-text-heading{
+  color: #fcdab7;
+}
+div h2.dark-text-heading{
+  color: #fcdab7;
+}
+div h4.dark-text-heading{
+  color: #fcdab7;
+}
+div h1.dark-text-heading{
+  color: #fcdab7;
+}
+div p.dark-text-para{
+  color: whitesmoke;
 }

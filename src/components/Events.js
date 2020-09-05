@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class Events extends Component {
   render() {
+    const {darkMode} = this.props;
     return (
       <div className="container-fluid" id="events" >
 
@@ -15,8 +16,8 @@ export default class Events extends Component {
               <img className="img-fluid nwoc-img" src={require('../assets/nwoc.png')} />
             </div>
             <div className="col-sm-5">
-              <h1 className="nwochead">NWOC</h1>
-              <p>NWoC (NJACK Winter of Code) is a program by NJACK that helps students
+              <h1 className={darkMode?"nwochead dark-text-heading":"nwochead"}>NWOC</h1>
+              <p className={darkMode?"dark-text-para":""}>NWoC (NJACK Winter of Code) is a program by NJACK that helps students
               understand the paradigm of Open Source contribution and gives them real world software development experience.
               </p>
               <div className="row justify-content-center">
@@ -34,8 +35,8 @@ export default class Events extends Component {
           <div className="row nwocrow  flex-column-reverse flex-sm-row">
             <div className="col"></div>
             <div className="col-sm-5 apeireon">
-              <h1 className="nwochead">APEIREON</h1>
-              <p> Apeireon is the annual Coding fest of the Department of Computer Science and Engineering, IIT Patna
+              <h1 className={darkMode?"nwochead dark-text-heading":"nwochead"}>APEIREON</h1>
+              <p className={darkMode?"dark-text-para":""}> Apeireon is the annual Coding fest of the Department of Computer Science and Engineering, IIT Patna
               packed with a multitude of fun events and workshops.
               </p>
               <div className="row justify-content-center">

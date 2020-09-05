@@ -8,13 +8,14 @@ export default class Team extends Component {
     fields
   }
   render() {
+    const {darkMode} = this.props;
     return (
       <div className="container-fluid">
         <div className="row">
           <div className="col"></div>
           <div className="col-7 col-sm-5 col-md-3 about">
             <img
-              src={require('../assets/team.svg')}
+              src={darkMode?require('../assets/teamdark.svg'):require('../assets/team.svg')}
               alt="team heading"
               className="aboutus img-fluid"
               style={{ marginTop: "57px" }}
