@@ -31,16 +31,16 @@ export default class Homepage extends Component {
           <div className="col"></div>
         </div>
 
-        <div className="row angbrack-row">
-          <div className="col home-clip">
+        <div className="row justify-content-center angbrack-row">
+          <div className="col-md-3 home-clip">
             <img className="home-clip-img" src={require('../assets/angbrack.svg')} />
             <p className="angbrack-para">We develop amazing web and mobile apps!</p>
           </div>
-          <div className="col home-clip">
+          <div className="col-md-3 home-clip">
             <img src={require('../assets/angbrack.svg')} />
             <p className="angbrack-para">We innovate in the fields of AI & Machine Learning!</p>
           </div>
-          <div className="col home-clip">
+          <div className="col-md-3 home-clip">
             <img src={require('../assets/angbrack.svg')} />
             <p className="angbrack-para">We compete zealously in Programming Contests and Hackathons!</p>
           </div>

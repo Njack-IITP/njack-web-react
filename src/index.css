@@ -277,14 +277,15 @@ p.angbrack-para{
 div.home-clip{
   justify-items: center;
   justify-content: center;
+  margin: 20px;
   width: 500px; 
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: teal;
   border-radius: 15px;
   cursor: pointer;
-  clip-path: circle(35px at 50% 40px);
-  transition: clip-path 0.6s ease-in-out;
+  /* clip-path: circle(35px at 50% 40px); */
+  /* transition: clip-path 0.6s ease-in-out; */
 }
 
 @media only screen and (max-width:1000px){
