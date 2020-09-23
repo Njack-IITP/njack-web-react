@@ -258,8 +258,6 @@ button.home-but:hover{
 }
 
 div.angbrack-row{
-  padding-left: 50px;
-  padding-right: 50px;
   margin-top: 80px;
   text-align: center;
   /* display: grid;
@@ -284,8 +282,8 @@ div.home-clip{
   background-color: teal;
   border-radius: 15px;
   cursor: pointer;
-  /* clip-path: circle(35px at 50% 40px); */
-  /* transition: clip-path 0.6s ease-in-out; */
+  clip-path: circle(35px at 50% 40px);
+  transition: clip-path 0.6s ease-in-out;
 }
 
 @media only screen and (max-width:1000px){
