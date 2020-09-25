@@ -258,8 +258,6 @@ button.home-but:hover{
 }
 
 div.angbrack-row{
-  padding-left: 50px;
-  padding-right: 50px;
   margin-top: 80px;
   text-align: center;
   /* display: grid;
@@ -277,6 +275,7 @@ p.angbrack-para{
 div.home-clip{
   justify-items: center;
   justify-content: center;
+  margin: 20px;
   width: 500px; 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -431,24 +430,21 @@ div.mobile-gsoc{
       font-size: 34px;
       margin-bottom: 58px;
   }
-  div.gsoc-text{
-      margin-bottom: 30px;
-  }
   div.gsoc-text p{
-      padding: 27px;
+      padding: 14px;
       font-size: 19px;
       font-weight: 700;
       text-align: center;
   }
 }
 
-button.gsoc-results{
-  margin: auto;
-  display: block;
-  padding: 10px;
+a.gsoc-results{
+  margin: 10px;
+  font-size: 20.00px;
+  font-weight: 700;
   border-radius: 15px;
-  margin-top: 30px;
-  font-weight: 600;
+  background-color: #F07630;
+  border: 1px solid white;
 }
 
 div.gsoc{
@@ -470,7 +466,7 @@ div.profile:hover{
 }
 img.profile-img{
   position: absolute; 
-  top: -36px; 
+  top: -45px; 
   left: 21%; 
   width: 58%;
 }
