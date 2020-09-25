@@ -32,9 +32,9 @@ export default class Homepage extends Component {
         </div>
 
         <div className="row justify-content-center angbrack-row">
-          <div className="col" style={{padding:"0"}}>
+          {/* <div className="col" style={{padding:"0"}}>
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnjack.iitp%2F&tabs=timeline&width=340&height=540&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="540" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-          </div>
+          </div> */}
           {/* <div className="col-md-5">
             <div className="row">
               <div className="col home-clip">
