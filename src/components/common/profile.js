@@ -3,8 +3,8 @@ import React from 'react'
 export default function Profile(props) {
     const {name, org, position, field, git, fb, lin, imgLink} = props;
     return (
-        <div className="col-md-3 profile" style={{margin:"30px"}}>
-            <img className="img-fluid profile-img" src={require(''+imgLink)} alt="profile photo"/>
+        <div className="col-sm-6 col-md-3 profile" style={{margin:"40px"}}>
+            <img className="img-fluid profile-img" src={require(''+imgLink)} alt="profile"/>
             <p className="profile-details">
                 {name}<br/>
                 {org}{org && <br/>}

@@ -39,7 +39,7 @@ export default class Gsoc extends Component {
               git="https://github.com/chanmol1999"
               fb="https://www.facebook.com/anmol.chaddha.125"
               lin="https://www.linkedin.com/in/anmol-chaddha/"
-              imgLink='./profileImages/Ellipse_49_d.png'
+              imgLink='./profileImages/anmol.svg'
             />
             <Profile
               name="Ashwani Yadav"
@@ -47,7 +47,7 @@ export default class Gsoc extends Component {
               git="https://github.com/ashwaniYDV/"
               fb="https://www.facebook.com/ashwani.yadav9499"
               lin="https://www.linkedin.com/in/ashwaniydv/"
-              imgLink='./profileImages/Ellipse_49_d.png'
+              imgLink='./profileImages/ashwani.svg'
             />
             <Profile
               name="Somenath Sarkar"
@@ -55,7 +55,7 @@ export default class Gsoc extends Component {
               git=""
               fb=""
               lin="https://www.linkedin.com/in/somenath1435"
-              imgLink='./profileImages/Ellipse_49_d.png'
+              imgLink='./profileImages/somenath.svg'
             />
           </div>
         </div>

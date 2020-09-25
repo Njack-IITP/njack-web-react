@@ -27,7 +27,7 @@ export default class GsocPage extends Component {
               git={m.git}
               fb={m.fb}
               lin={m.lin}
-              imgLink={'./profileImages/Ellipse_49_d.png'}
+              imgLink={''+m.imgLink}
             />))}
         </div>
       </div>
