@@ -26,7 +26,7 @@ export default class Homepage extends Component {
           </div>
 
           <div className="col-md-5 m-auto">
-            <img className="img-fluid" src={require('../assets/Main photo.png')} />
+            <img className="img-fluid" alt="main pic" src={require('../assets/Main photo.png')} />
           </div>
           <div className="col"></div>
         </div>

@@ -19,7 +19,7 @@ export default class Gsoc extends Component {
         {/* <!-- visible on mobile and sm only --> */}
         <div className="row d-md-none mobile-gsoc" >
           <div className="col d-flex justify-content-center mobile-gsoc">
-            <img className="img-fluid" src={require('../assets/gsoc.png')} />
+            <img alt="gsoc icon" className="img-fluid" src={require('../assets/gsoc.png')} />
           </div>
           <div className="row-fluid gsoc-text">
             <p className={darkMode ? "gsoc-para dark-text-para" : "gsoc-para"}>
