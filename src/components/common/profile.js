@@ -10,9 +10,9 @@ export default function Profile(props) {
                 {org}{org && <br/>}
                 {position}{position && <br/>}
                 {position!=="Overall Co-ordinator" && field}{field && <br/>}
-                {lin && <a href={lin} target="_blank"><i className="fa fa-linkedin-square fa-lg m-2" style={{color:"white"}}/></a>}
-                {git && <a href={git} target="_blank"><i className="fa fa-github-square fa-lg m-2" style={{color:"white"}}/></a>}
-                {fb && <a href={fb} target="_blank"><i className="fa fa-facebook-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {lin && <a href={lin} target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {git && <a href={git} target="_blank" rel="noopener noreferrer"><i className="fa fa-github-square fa-lg m-2" style={{color:"white"}}/></a>}
+                {fb && <a href={fb} target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook-square fa-lg m-2" style={{color:"white"}}/></a>}
             </p>
         </div>
     )
