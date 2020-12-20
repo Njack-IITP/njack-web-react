@@ -13,7 +13,7 @@ export default class Events extends Component {
           <div className="row nwocrow">
             <div className="col"></div>
             <div className="col-sm-5 d-flex align-items-center">
-              <img className="img-fluid nwoc-img" src={require('../assets/nwoc.png')} />
+              <img className="img-fluid nwoc-img" alt="nwoc icon" src={require('../assets/nwoc.png')} />
             </div>
             <div className="col-sm-5">
               <h1 className={darkMode?"nwochead dark-text-heading":"nwochead"}>NWOC</h1>
@@ -46,7 +46,7 @@ export default class Events extends Component {
               </div>
             </div>
             <div className="col-sm-5 d-flex align-items-center">
-              <img className="img-fluid apeireon-img" src={require('../assets/apeireon.svg')} />
+              <img alt="aperion icon" className="img-fluid apeireon-img" src={require('../assets/apeireon.svg')} />
 
             </div>
             <div className="col"></div>

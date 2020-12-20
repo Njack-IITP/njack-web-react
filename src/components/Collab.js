@@ -7,14 +7,14 @@ export default class Collab extends Component {
                 <div className="row justify-content-center collab">
                     <div className="col-12 collab-head">Collaborations</div>
                     <div className="col-4 d-flex justify-content-center">
-                        <img className="img-fluid" src={require('../assets/Image_11.png')} />
+                        <img alt="Jetbrains logo" className="img-fluid" src={require('../assets/Image_11.png')} />
                     </div>
                     <div className="col-4 d-flex justify-content-center">
-                        <img className="img-fluid" src={require('../assets/Image_13.png')} />
+                        <img alt="Digital Ocean logo" className="img-fluid" src={require('../assets/Image_13.png')} />
 
                     </div>
                     <div className="col-4 d-flex justify-content-center">
-                        <img className="img-fluid" src={require('../assets/github.png')} />
+                        <img alt="Github logo" className="img-fluid" src={require('../assets/github.png')} />
 
                     </div>
                 </div>
